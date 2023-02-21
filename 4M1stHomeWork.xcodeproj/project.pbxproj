@@ -13,6 +13,13 @@
 		CE737942298447920017B1F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE737940298447920017B1F8 /* Main.storyboard */; };
 		CE737944298447930017B1F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE737943298447930017B1F8 /* Assets.xcassets */; };
 		CE737947298447930017B1F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE737945298447930017B1F8 /* LaunchScreen.storyboard */; };
+		CE737973298D69E20017B1F8 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE737972298D69E20017B1F8 /* CategoryCollectionViewCell.xib */; };
+		CE737975298D69F70017B1F8 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE737974298D69F70017B1F8 /* CategoryCollectionViewCell.swift */; };
+		CE737977298E843E0017B1F8 /* OrderTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE737976298E843E0017B1F8 /* OrderTypeCollectionViewCell.swift */; };
+		CE737979298E87D70017B1F8 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE737978298E87D70017B1F8 /* ProductTableViewCell.swift */; };
+		CE884D2029A4DB4D007CFE4E /* OrderTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE884D1F29A4DB4D007CFE4E /* OrderTypeCollectionViewCell.xib */; };
+		CE884D2229A4DB68007CFE4E /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE884D2129A4DB68007CFE4E /* ProductTableViewCell.xib */; };
+		CE884D2429A4EF4B007CFE4E /* products.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884D2329A4EF4B007CFE4E /* products.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		CE737943298447930017B1F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE737946298447930017B1F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE737948298447930017B1F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE737972298D69E20017B1F8 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE737974298D69F70017B1F8 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE737976298E843E0017B1F8 /* OrderTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE737978298E87D70017B1F8 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		CE884D1F29A4DB4D007CFE4E /* OrderTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE884D2129A4DB68007CFE4E /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		CE884D2329A4EF4B007CFE4E /* products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = products.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,13 @@
 				CE737943298447930017B1F8 /* Assets.xcassets */,
 				CE737945298447930017B1F8 /* LaunchScreen.storyboard */,
 				CE737948298447930017B1F8 /* Info.plist */,
+				CE737974298D69F70017B1F8 /* CategoryCollectionViewCell.swift */,
+				CE737976298E843E0017B1F8 /* OrderTypeCollectionViewCell.swift */,
+				CE737978298E87D70017B1F8 /* ProductTableViewCell.swift */,
+				CE884D2329A4EF4B007CFE4E /* products.swift */,
+				CE737972298D69E20017B1F8 /* CategoryCollectionViewCell.xib */,
+				CE884D1F29A4DB4D007CFE4E /* OrderTypeCollectionViewCell.xib */,
+				CE884D2129A4DB68007CFE4E /* ProductTableViewCell.xib */,
 			);
 			path = 4M1stHomeWork;
 			sourceTree = "<group>";
@@ -125,7 +146,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE737973298D69E20017B1F8 /* CategoryCollectionViewCell.xib in Resources */,
+				CE884D2229A4DB68007CFE4E /* ProductTableViewCell.xib in Resources */,
 				CE737947298447930017B1F8 /* LaunchScreen.storyboard in Resources */,
+				CE884D2029A4DB4D007CFE4E /* OrderTypeCollectionViewCell.xib in Resources */,
 				CE737944298447930017B1F8 /* Assets.xcassets in Resources */,
 				CE737942298447920017B1F8 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE737977298E843E0017B1F8 /* OrderTypeCollectionViewCell.swift in Sources */,
+				CE737975298D69F70017B1F8 /* CategoryCollectionViewCell.swift in Sources */,
+				CE884D2429A4EF4B007CFE4E /* products.swift in Sources */,
 				CE73793F298447920017B1F8 /* ViewController.swift in Sources */,
 				CE73793B298447920017B1F8 /* AppDelegate.swift in Sources */,
 				CE73793D298447920017B1F8 /* SceneDelegate.swift in Sources */,
+				CE737979298E87D70017B1F8 /* ProductTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +330,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Arknahon.-M1stHomeWork";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,6 +361,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Arknahon.-M1stHomeWork";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
