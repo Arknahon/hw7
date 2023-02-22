@@ -5,4 +5,10 @@
 //  Created by user on 21/2/23.
 //
 
-import Foundation
+import UIKit
+
+struct TypeOfOrder {
+    let orderOfType: String
+    let colorForText: UIColor
+    let backGroundColorForText: UIColor
+}

@@ -180,3 +180,9 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+extension ViewController: ProductsCellDelegete {
+    func didSelectionItems(item : Product) {
+        let secondVC = storyboard?.instantiateViewController(withIdentifier: "second_vc") as! SecondViewController
+        self.navigationController?.pushViewController(secondVC, animated: true)
+    }
+}

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Category {
+    let imagesCategory: String
+    let name: String
+}
