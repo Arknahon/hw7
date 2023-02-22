@@ -22,8 +22,3 @@ class OrderTypeCollectionViewCell: UICollectionViewCell {
     }
 }
 
-struct TypeOfOrder {
-    let orderOfType: String
-    let colorForText: UIColor
-    let backGroundColorForText: UIColor
-}

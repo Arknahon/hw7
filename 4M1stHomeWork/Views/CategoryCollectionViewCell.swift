@@ -22,7 +22,4 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }
 }
 
-struct Category {
-    let imagesCategory: String
-    let name: String
-}
+
