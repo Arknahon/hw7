@@ -41,15 +41,15 @@ class ProductTableViewCell: UITableViewCell, ProductsCellDelegete {
     private var products: Product?
         func display(item: Product) {
             products = item
-        productImageView.image = UIImage(named: item.image)
-            nameLabel.text = item.name
-            priceLable.text = item.price
-            rateLable.text = item.rate
-            whereIs.text = item.whereIsFromProduct
-            openClose.text = item.openClose
-            deliveryLable.text = item.delivery
-            distanceLable.text = item.distance
-            timeLable.text = item.time
+            productImageView.getImage(from: item.thumbnail)
+            nameLabel.text = item.title
+            priceLable.text = "\(item.price)"
+            rateLable.text = "\(item.rating)"
+            whereIs.text = item.description
+            openClose.text = "\(item.discountPercentage)"
+            deliveryLable.text = "\(item.stock)"
+            distanceLable.text = item.brand
+            timeLable.text = item.category
     }
     @objc
     private func didTapOnImage() {

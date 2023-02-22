@@ -7,39 +7,21 @@
 
 import Foundation
 
-let productJSON = """
-[{ "image": "Burger Craze",
-   "name": "Burger Craze",
-   "time": "15-20",
-   "price": "minimum 10$",
-   "openClose": "Open",
-   "whereIsFromProduct": "American & Burger",
-   "delivery": "Free",
-   "rate": "4.6(601)",
-   "distance": "1.5 km "
-},
-{
-   "image": "Italian Pizza",
-   "name": "Italian Pizza",
-   "time": "15-20",
-   "price": "minimum 10$",
-   "openClose": "Open",
-   "whereIsFromProduct": "Italian & Burger",
-   "delivery": "Free",
-   "rate": "4.6(601)",
-   "distance": "1.5 km "
-}
-]
-"""
+
 
 struct Product: Decodable {
-    var image: String
-    var name: String
-    var time: String
-    var price: String
-    var openClose: String
-    var whereIsFromProduct: String
-    var delivery: String
-    var rate: String
-    var distance: String
+    var title: String
+    var description: String
+    var price: Int
+    var discountPercentage: Double
+    var rating: Double
+    var stock: Int
+    var brand: String
+    var category: String
+    var thumbnail: String
 }
+
+struct Products: Decodable {
+    var products: [Product]
+}
+

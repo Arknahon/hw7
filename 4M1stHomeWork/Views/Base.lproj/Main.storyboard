@@ -77,6 +77,7 @@
                     <connections>
                         <outlet property="categoryCollectionView" destination="rvk-Ll-KRJ" id="KDh-SZ-xIM"/>
                         <outlet property="productTableView" destination="N9a-Ch-Ipx" id="bIz-KR-gSe"/>
+                        <outlet property="searchBar" destination="OXn-SV-MUq" id="FhZ-4v-jAa"/>
                         <outlet property="typeOfOrderCollectionView" destination="Z0C-oI-sk6" id="6FJ-LB-yWo"/>
                     </connections>
                 </viewController>
