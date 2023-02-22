@@ -18,7 +18,7 @@ class OrderTypeCollectionViewCell: UICollectionViewCell {
         typeOfOrderLable.layer.borderColor = UIColor.lightGray.cgColor
         typeOfOrderLable.layer.borderWidth = 2
         
-        typeOfOrderLable.textColor = item.colorForText
+//        typeOfOrderLable.textColor = item.colorForText
     }
 }
 

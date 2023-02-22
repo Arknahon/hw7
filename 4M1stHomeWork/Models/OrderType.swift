@@ -7,8 +7,24 @@
 
 import UIKit
 
-struct TypeOfOrder {
-    let orderOfType: String
-    let colorForText: UIColor
-    let backGroundColorForText: UIColor
+let orderTypeJSON = """
+[{
+    "orderOfType": "Delivery"
+},
+{
+      "orderOfType": "Pick Up"
+
+},
+{
+      "orderOfType": "Catering"
+},
+{
+       "orderOfType": "Carbside"
 }
+]
+"""
+
+struct TypeOfOrder:Decodable {
+    let orderOfType: String
+}
+

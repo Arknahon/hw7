@@ -7,7 +7,29 @@
 
 import Foundation
 
-struct Category {
+let categoryJSON = """
+[{
+     "imagesCategory": "Take Aways",
+     "name": "Take Aways"
+},
+{
+     "imagesCategory": "Pharmacy",
+     "name": "Pharmacy"
+
+
+},
+{
+       "imagesCategory": "Grocery",
+       "name": "Grocery"
+},
+{
+       "imagesCategory": "Convience",
+       "name": "Convience"
+}
+]
+"""
+
+struct Category:Decodable {
     let imagesCategory: String
     let name: String
 }

@@ -13,53 +13,40 @@ class ViewController: UIViewController {
     @IBOutlet private weak var categoryCollectionView: UICollectionView!
     @IBOutlet private weak var productTableView: UITableView!
     
-    var productArray: [Product] = [
-        Product(image: "Burger Craze",
-                name: "Burger Craze",
-                time: "15 - 20 min",
-                price: "minimum 10$",
-                openClose: "open",
-                whereIsFromProduct: "American & Burgers",
-                delivery: "Free",
-                rate: "4.6(601)",
-                distance: "1.5 km away"
-               ),
-        Product(image: "Italian Pizza",
-                name: "Italian Pizza",
-                time: "15 - 20 min",
-                price: "minimum 10$",
-                openClose: "open",
-                whereIsFromProduct: "Italian & Burgers",
-                delivery: "Free",
-                rate: "4.6(600)",
-                distance: "1.5 km away"),
-    ]
-    
-    private let categoryArray: [Category] = [
-        Category(imagesCategory: "Take Aways",
-                 name: "Takeaways"),
-        Category(imagesCategory: "Grocery" ,
-                 name: "Grocery"),
-        Category(imagesCategory: "Convience",
-                 name: "Convenience"),
-        Category(imagesCategory: "Pharmacy ",
-                 name: "Pharmacy")
-    ]
-    
-    private let orderType: [TypeOfOrder] = [
-        TypeOfOrder(orderOfType: "Delivery",
-                    colorForText: .white, backGroundColorForText: .orange),
-        TypeOfOrder(orderOfType: "Pick Up",
-                    colorForText: .systemGreen, backGroundColorForText: .white),
-        TypeOfOrder(orderOfType: "Catering",
-                    colorForText: .systemGreen, backGroundColorForText: .white),
-        TypeOfOrder(orderOfType: "Carbside",
-                    colorForText: .systemGreen, backGroundColorForText: .white)
-    ]
+    private var productArray: [Product] = []
+    private var categoryArray: [Category] = []
+    private var orderType: [TypeOfOrder] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCategoryCV()
+        fetchProducts()
+        fetchCategory()
+        fetchOrderType()
+        
+    }
+    private func fetchProducts() {
+        do { productArray = try NetworkLayer.shared.fetchProducts()
+            productTableView.reloadData()
+            
+        } catch {
+            print("error \(error.localizedDescription)")
+        }
+        
+    }
+    private func fetchCategory() {
+        do { categoryArray = try NetworkLayer.shared.fetchCategory()
+            categoryCollectionView.reloadData()
+        } catch {
+            print("error \(error.localizedDescription)")
+        }
+    }
+    private func fetchOrderType() {
+        do { orderType = try NetworkLayer.shared.fetchOrderType()
+            typeOfOrderCollectionView.reloadData()
+        } catch {
+            print("error \(error.localizedDescription)")
+        }
     }
     
     private func configureCategoryCV() {
@@ -157,8 +144,6 @@ extension ViewController: UICollectionViewDataSource {
                 for: indexPath
             ) as! OrderTypeCollectionViewCell
             let model = orderType[indexPath.row]
-            cell.backgroundColor = orderType[0].backGroundColorForText
-            cell.backgroundColor = orderType[indexPath.row].backGroundColorForText
             cell.display(item: model)
             return cell
         }
